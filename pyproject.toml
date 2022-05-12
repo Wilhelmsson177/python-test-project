@@ -19,7 +19,7 @@ classifiers = [
 Changelog = "https://github.com/Wilhelmsson177/python-test-project/releases"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.10"
 click = ">=8.0.1"
 
 [tool.poetry.dev-dependencies]
@@ -54,6 +54,9 @@ python-test-project = "ptp.__main__:main"
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
 tests = ["tests", "*/tests"]
+
+[tool.black]
+line-length = 120
 
 [tool.coverage.run]
 branch = true
