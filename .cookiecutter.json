@@ -1,0 +1,13 @@
+{
+  "_template": "gh:cjolowicz/cookiecutter-hypermodern-python",
+  "author": "Willi Meierhof",
+  "copyright_year": "2022",
+  "development_status": "Development Status :: 2 - Pre-Alpha",
+  "email": "willi.meierhof@tracetronic.de",
+  "friendly_name": "Python Test Project",
+  "github_user": "Wilhelmsson177",
+  "license": "MIT",
+  "package_name": "ptp",
+  "project_name": "python-test-project",
+  "version": "0.0.1"
+}
