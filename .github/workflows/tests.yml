@@ -92,6 +92,7 @@ jobs:
         run: poetry run pytest
       - name: Python Cov
         uses: orgoro/coverage@v2.1
+        if: github.event_name == 'pull_request'
         with:
           coverageFile: cov.xml
           token: ${{secrets.WORKFLOW_TOKEN}}
