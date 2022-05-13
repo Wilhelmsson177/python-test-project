@@ -89,8 +89,9 @@ jobs:
       #    run test suite and output coverage file
       #----------------------------------------------
       - name: Test with pytest
-        run: poetry run pytest --cov-report=xml
+        run: poetry run pytest
       - name: Python Cov
         uses: orgoro/coverage@v2.1
         with:
+          coverageFile: path/to/coverage.xml
           token: ${{secrets.WORKFLOW_TOKEN}}

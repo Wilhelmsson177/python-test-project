@@ -22,6 +22,7 @@ Changelog = "https://github.com/Wilhelmsson177/python-test-project/releases"
 python = "^3.10"
 click = ">=8.0.1"
 pytest-cov = "^3.0.0"
+pytest-html = "^3.1.1"
 
 [tool.poetry.dev-dependencies]
 Pygments = ">=2.10.0"
@@ -79,6 +80,11 @@ pretty = true
 show_column_numbers = true
 show_error_codes = true
 show_error_context = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=adop_blex --cov-report html --cov-report xml:cov.xml --cov-branch --html=report.html --self-contained-html"
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
