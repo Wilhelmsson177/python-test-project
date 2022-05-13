@@ -93,5 +93,5 @@ jobs:
       - name: Python Cov
         uses: orgoro/coverage@v2.1
         with:
-          coverageFile: path/to/coverage.xml
+          coverageFile: cov.xml
           token: ${{secrets.WORKFLOW_TOKEN}}
