@@ -1,0 +1,8 @@
+{
+  "python.formatting.provider": "black",
+  "python.testing.pytestEnabled": true,
+  "coverage-gutters.coverageReportFileName": "htmlcov/**/index.html",
+  "coverage-gutters.coverageFileNames": ["cov.xml"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true
+}
